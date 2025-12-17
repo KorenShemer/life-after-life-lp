@@ -16,7 +16,7 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center space-x-8">
             <a
-              href="#about"
+              href="#Home"
               className="text-slate-200 hover:text-slate-50 transition ml-8"
             >
               בית
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="text-slate-200 hover:text-slate-50 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -73,31 +73,25 @@ const Navbar = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
             <a
-              href="#home"
-              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
-            >
-              Home
-            </a>
-            <a
               href="#about"
               className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
             >
-              About
+              ביקורות
             </a>
             <a
               href="#services"
               className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
             >
-              Services
+              קצת עלינו
             </a>
             <a
               href="#contact"
               className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
             >
-              Contact
+              צרו קשר
             </a>
             <button className="w-full mt-2 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-              Get Started
+              הירשם
             </button>
           </div>
         </div>
