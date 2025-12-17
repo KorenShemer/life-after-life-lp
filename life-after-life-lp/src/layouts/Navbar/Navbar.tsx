@@ -90,7 +90,7 @@ const Navbar = () => {
             >
               צרו קשר
             </a>
-            <button className="w-full mt-2 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+            <button className="w-full mt-2 bg-gradient-to-r from-indigo-800 to-indigo-400 text-slate-200 px-6 py-2 rounded-lg hover:bg-blue-700 transition">
               הירשם
             </button>
           </div>
