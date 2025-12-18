@@ -1,42 +1,63 @@
-import { useState } from 'react';
-import logo from '../../assets/icons/logo.png';
+import { useState } from "react";
+import logo from "../../assets/icons/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            <img src={logo} alt="Logo" className='h-12 w-12'/>
-            <span className=''> Life After Life</span>
+            <a href="#home">
+              <img src={logo} alt="Logo" className="h-12 w-12" />
+            </a>
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-gray-700 hover:text-blue-600 transition">
-              Home
+            <a
+              href="#Home"
+              className="text-slate-950 hover:text-slate-500 transition ml-8"
+            >
+              בית
             </a>
-            <a href="#about" className="text-gray-700 hover:text-blue-600 transition">
-              About
+            <a
+              href="#about"
+              className="text-slate-950 hover:text-slate-500 transition"
+            >
+              קצת עלינו
             </a>
-            <a href="#services" className="text-gray-700 hover:text-blue-600 transition">
-              Services
+            <a
+              href="#services"
+              className="text-slate-950 hover:text-slate-500 transition"
+            >
+              ביקורות
             </a>
-            <a href="#contact" className="text-gray-700 hover:text-blue-600 transition">
-              Contact
+            <a
+              href="#contact"
+              className="text-slate-950 hover:text-slate-500 transition"
+            >
+              צור קשר
             </a>
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-              Get Started
+            <button className="text-slate-950 px-6 py-2 rounded-lg border-2 border-slate-950 border-solid rounded-lg p-4 hover:scale-105 transition duration-300">
+              הירשם
             </button>
           </div>
 
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none"
+              className="text-slate-950 hover:text-slate-500 focus:outline-none"
             >
-              <svg className="h-6 w-6" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
+              <svg
+                className="h-6 w-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
                 {isOpen ? (
                   <path d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -51,20 +72,26 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-            <a href="#home" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition">
-              Home
+            <a
+              href="#about"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
+            >
+              ביקורות
             </a>
-            <a href="#about" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition">
-              About
+            <a
+              href="#services"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
+            >
+              קצת עלינו
             </a>
-            <a href="#services" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition">
-              Services
+            <a
+              href="#contact"
+              className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition"
+            >
+              צרו קשר
             </a>
-            <a href="#contact" className="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md transition">
-              Contact
-            </a>
-            <button className="w-full mt-2 bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
-              Get Started
+            <button className="w-full mt-2 bg-slate-950 text-slate-200 px-6 py-2 rounded-lg hover:bg-slate-600 transition">
+              הירשם
             </button>
           </div>
         </div>
