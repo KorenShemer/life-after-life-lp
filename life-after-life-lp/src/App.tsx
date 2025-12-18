@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./layouts/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
 
 const App = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const App = () => {
   return (
     <div className="App">
       <Navbar />
+      <Hero/>
     </div>
   );
 };
