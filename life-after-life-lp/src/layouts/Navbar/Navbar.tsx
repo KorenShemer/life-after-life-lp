@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-slate-900/30 backdrop-blur-md">
+    <nav className="bg-white fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -17,29 +17,29 @@ const Navbar = () => {
           <div className="hidden md:flex items-center space-x-8">
             <a
               href="#Home"
-              className="text-slate-200 hover:text-slate-50 transition ml-8"
+              className="text-slate-950 hover:text-slate-500 transition ml-8"
             >
               בית
             </a>
             <a
               href="#about"
-              className="text-slate-200 hover:text-slate-50 transition"
+              className="text-slate-950 hover:text-slate-500 transition"
             >
               קצת עלינו
             </a>
             <a
               href="#services"
-              className="text-slate-200 hover:text-slate-50 transition"
+              className="text-slate-950 hover:text-slate-500 transition"
             >
               ביקורות
             </a>
             <a
               href="#contact"
-              className="text-slate-200 hover:text-slate-50 transition"
+              className="text-slate-950 hover:text-slate-500 transition"
             >
               צור קשר
             </a>
-            <button className="bg-gradient-to-r from-violet-800 to-indigo-800 text-slate-200 px-6 py-2 rounded-lg hover:scale-105 transition duration-300">
+            <button className="text-slate-950 px-6 py-2 rounded-lg border-2 border-slate-950 border-solid rounded-lg p-4 hover:scale-105 transition duration-300">
               הירשם
             </button>
           </div>
@@ -47,7 +47,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-200 hover:text-slate-50 focus:outline-none"
+              className="text-slate-950 hover:text-slate-500 focus:outline-none"
             >
               <svg
                 className="h-6 w-6"
@@ -90,7 +90,7 @@ const Navbar = () => {
             >
               צרו קשר
             </a>
-            <button className="w-full mt-2 bg-gradient-to-r from-indigo-800 to-indigo-400 text-slate-200 px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+            <button className="w-full mt-2 bg-slate-950 text-slate-200 px-6 py-2 rounded-lg hover:bg-slate-600 transition">
               הירשם
             </button>
           </div>
