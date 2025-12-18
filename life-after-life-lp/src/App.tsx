@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import Navbar from "./layouts/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import AboutUs from "./components/AboutUs/AboutUs";
 
 const App = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const App = () => {
     <div className="App">
       <Navbar />
       <Hero/>
+      <AboutUs />
     </div>
   );
 };
