@@ -364,9 +364,9 @@ const About = () => {
                   className="flex-1 bg-transparent px-4 py-4 text-gray-800 placeholder-gray-500 text-lg focus:outline-none rounded-r-full"
                 />
                 <motion.button
-                  whileHover={{ scale: 1.03 }}
+                  whileHover={{ backgroundColor: "#2674f1ff", color: "#ffffffff" }}
                   whileTap={{ scale: 0.97 }}
-                  className="bg-black text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-gray-900 transition-colors shrink-0"
+                  className="bg-black text-white font-bold text-lg px-8 py-3.5 rounded-full hover:bg-gray-900 transition-colors duration-[0.03s] shrink-0"
                 >
                   הצטרפו עכשיו
                 </motion.button>
