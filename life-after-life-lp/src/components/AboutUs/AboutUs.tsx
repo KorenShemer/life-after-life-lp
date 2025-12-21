@@ -216,15 +216,15 @@ const About = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 whileHover={{ y: -5 }}
-                className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all cursor-pointer"
+                className="bg-white border-2 border-neutral-200 rounded-2xl p-8 md:p-10 shadow-xl text-center hover:shadow-2xl transition-all"
               >
-                <div className="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-400 rounded-xl flex items-center justify-center mb-4 text-white">
+                <div className="w-20 h-20 md:w-20 md:h-20 bg-sky-300 rounded-xl flex items-center justify-center mb-6 text-white mx-auto">
                   {feature.icon}
                 </div>
-                <h4 className="text-xl font-bold text-black mb-3">
+                <h4 className="text-xl md:text-2xl font-bold text-black mb-4">
                   {feature.title}
                 </h4>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 text-base md:text-lg leading-relaxed">
                   {feature.description}
                 </p>
               </motion.div>
@@ -364,7 +364,10 @@ const About = () => {
                   className="flex-1 bg-transparent px-4 py-4 text-gray-800 placeholder-gray-500 text-lg focus:outline-none rounded-r-full"
                 />
                 <motion.button
-                  whileHover={{ backgroundColor: "#2674f1ff", color: "#ffffffff" }}
+                  whileHover={{
+                    backgroundColor: "#2674f1ff",
+                    color: "#ffffffff",
+                  }}
                   whileTap={{ scale: 0.97 }}
                   className="bg-black text-white font-bold text-lg px-8 py-3.5 rounded-full hover:bg-gray-900 transition-colors duration-[0.03s] shrink-0"
                 >
