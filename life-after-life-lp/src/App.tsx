@@ -4,6 +4,7 @@ import Navbar from "./layouts/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Features from "./components/SystemFeatures/SystemFeatures";
+import Pricing from "./components/SubscriptionPlans/SubscriptionPlans";
 
 const App = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const App = () => {
       <Hero/>
       <AboutUs />
       <Features/>
+      <Pricing/>
     </div>
   );
 };
