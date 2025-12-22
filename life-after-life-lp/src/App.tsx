@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./layouts/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import AboutUs from "./components/AboutUs/AboutUs";
+import Features from "./components/SystemFeatures/SystemFeatures";
 
 const App = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const App = () => {
       <Navbar />
       <Hero/>
       <AboutUs />
+      <Features/>
     </div>
   );
 };
