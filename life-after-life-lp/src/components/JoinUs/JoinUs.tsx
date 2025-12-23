@@ -134,7 +134,7 @@ const JoinUs = () => {
                       </motion.div>
 
                       {/* Memory/Photo Album icon */}
-                      <div className="flex-1 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center shadow-xl">
+                      <div className="flex-1 bg-gradient-to-br from-blue-500 to-sky-500 rounded-xl flex items-center justify-center shadow-xl">
                         <svg
                           width="80"
                           height="80"
@@ -153,7 +153,7 @@ const JoinUs = () => {
                         x: [0, 5, 0],
                       }}
                       transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
-                      className="absolute -top-3 -right-3 w-10 h-10 border-2 border-pink-400 rounded-full"
+                      className="absolute -top-3 -right-3 w-10 h-10 border-2 border-blue-700 rounded-full"
                     />
                     <motion.div
                       animate={{
@@ -161,7 +161,7 @@ const JoinUs = () => {
                         x: [0, -5, 0],
                       }}
                       transition={{ duration: 3.5, repeat: Infinity, delay: 1 }}
-                      className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-90"
+                      className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full opacity-90"
                     />
                     <motion.div
                       animate={{
