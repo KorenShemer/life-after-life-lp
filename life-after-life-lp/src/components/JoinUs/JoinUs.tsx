@@ -22,7 +22,7 @@ const JoinUs = () => {
               opacity: [0.15, 0.25, 0.15],
             }}
             transition={{ duration: 8, repeat: Infinity }}
-            className="absolute top-0 right-0 w-64 h-64 md:w-96 md:h-96 bg-cyan-300 rounded-full blur-3xl"
+            className="absolute top-0 right-0 w-40 h-40 md:w-96 md:h-96 bg-cyan-300 rounded-full blur-3xl"
           />
           <motion.div
             animate={{
@@ -30,7 +30,7 @@ const JoinUs = () => {
               opacity: [0.1, 0.2, 0.1],
             }}
             transition={{ duration: 10, repeat: Infinity, delay: 1 }}
-            className="absolute bottom-0 left-0 w-56 h-56 md:w-80 md:h-80 bg-blue-300 rounded-full blur-3xl"
+            className="absolute bottom-0 left-0 w-36 h-36 md:w-80 md:h-80 bg-blue-300 rounded-full blur-3xl"
           />
 
           {/* Floating cloud-like shapes */}
@@ -41,7 +41,7 @@ const JoinUs = () => {
               scale: [1, 1.1, 1],
             }}
             transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute top-16 left-1/4 w-20 h-20 md:w-28 md:h-28 bg-white/20 rounded-full blur-xl"
+            className="absolute top-16 left-1/4 w-12 h-12 md:w-28 md:h-28 bg-white/20 rounded-full blur-xl"
           />
           <motion.div
             animate={{
@@ -55,7 +55,7 @@ const JoinUs = () => {
               ease: "easeInOut",
               delay: 2,
             }}
-            className="absolute bottom-20 right-1/4 w-16 h-16 md:w-24 md:h-24 bg-white/15 rounded-full blur-xl"
+            className="absolute bottom-20 right-1/4 w-10 h-10 md:w-24 md:h-24 bg-white/15 rounded-full blur-xl"
           />
           <motion.div
             animate={{
@@ -69,7 +69,7 @@ const JoinUs = () => {
               ease: "easeInOut",
               delay: 1,
             }}
-            className="absolute top-1/3 right-1/3 w-12 h-12 md:w-16 md:h-16 bg-cyan-200/30 rounded-full blur-lg"
+            className="absolute top-1/3 right-1/3 w-8 h-8 md:w-16 md:h-16 bg-cyan-200/30 rounded-full blur-lg"
           />
           <motion.div
             animate={{
@@ -83,7 +83,7 @@ const JoinUs = () => {
               ease: "easeInOut",
               delay: 3,
             }}
-            className="absolute bottom-1/4 left-1/4 w-14 h-14 md:w-20 md:h-20 bg-white/25 rounded-full blur-xl"
+            className="absolute bottom-1/4 left-1/4 w-10 h-10 md:w-20 md:h-20 bg-white/25 rounded-full blur-xl"
           />
 
           <div className="relative z-10 py-12 md:py-16 px-6 md:px-12">
@@ -94,7 +94,7 @@ const JoinUs = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="relative h-[350px] md:h-[450px] order-2 md:order-1"
+                className="relative h-[450px] order-2 md:order-1 hidden md:block"
               >
                 <div className="absolute inset-0 flex items-center justify-center">
                   {/* Soft glow behind phone */}
@@ -104,7 +104,7 @@ const JoinUs = () => {
                       opacity: [0.15, 0.3, 0.15],
                     }}
                     transition={{ duration: 4, repeat: Infinity }}
-                    className="absolute w-48 h-48 md:w-64 md:h-64 bg-cyan-400 rounded-full blur-3xl"
+                    className="absolute w-32 h-32 md:w-64 md:h-64 bg-cyan-400 rounded-full blur-3xl"
                   />
 
                   {/* Phone mockup */}
@@ -113,21 +113,22 @@ const JoinUs = () => {
                     whileInView={{ y: 0, opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.6, delay: 0.2 }}
-                    className="relative z-10 w-56 h-[380px] md:w-60 md:h-[400px] bg-white rounded-[2.5rem] shadow-2xl p-2.5 border-2 border-cyan-200"
+                    className="relative z-10 w-44 h-[300px] md:w-60 md:h-[400px] bg-white rounded-[2.5rem] shadow-2xl p-2.5 border-2 border-cyan-200"
                   >
                     {/* Phone screen */}
-                    <div className="w-full h-full bg-gradient-to-br from-cyan-50 to-blue-50 rounded-[2.2rem] p-5 flex flex-col gap-5">
+                    <div className="w-full h-full bg-gradient-to-br from-cyan-50 to-blue-50 rounded-[2.2rem] p-3 md:p-5 flex flex-col gap-3 md:gap-5">
                       {/* Lock icon */}
                       <motion.div
                         animate={{ y: [0, -3, 0] }}
                         transition={{ duration: 2.5, repeat: Infinity }}
-                        className="w-14 h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg"
+                        className="w-10 h-10 md:w-14 md:h-14 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-xl flex items-center justify-center shadow-lg"
                       >
                         <svg
-                          width="28"
-                          height="28"
+                          width="20"
+                          height="20"
                           viewBox="0 0 24 24"
                           fill="white"
+                          className="md:w-7 md:h-7"
                         >
                           <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" />
                         </svg>
@@ -136,10 +137,11 @@ const JoinUs = () => {
                       {/* Memory/Photo Album icon */}
                       <div className="flex-1 bg-gradient-to-br from-blue-500 to-sky-500 rounded-xl flex items-center justify-center shadow-xl">
                         <svg
-                          width="80"
-                          height="80"
+                          width="60"
+                          height="60"
                           viewBox="0 0 24 24"
                           fill="white"
+                          className="md:w-20 md:h-20"
                         >
                           <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" />
                         </svg>
@@ -153,7 +155,7 @@ const JoinUs = () => {
                         x: [0, 5, 0],
                       }}
                       transition={{ duration: 3, repeat: Infinity, delay: 0.5 }}
-                      className="absolute -top-3 -right-3 w-10 h-10 border-2 border-blue-700 rounded-full"
+                      className="absolute -top-2 -right-2 w-6 h-6 md:w-10 md:h-10 border-2 border-blue-700 rounded-full"
                     />
                     <motion.div
                       animate={{
@@ -161,7 +163,7 @@ const JoinUs = () => {
                         x: [0, -5, 0],
                       }}
                       transition={{ duration: 3.5, repeat: Infinity, delay: 1 }}
-                      className="absolute -bottom-3 -left-3 w-12 h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full opacity-90"
+                      className="absolute -bottom-2 -left-2 w-7 h-7 md:w-12 md:h-12 bg-gradient-to-br from-blue-400 to-cyan-500 rounded-full opacity-90"
                     />
                     <motion.div
                       animate={{
@@ -169,7 +171,7 @@ const JoinUs = () => {
                         scale: [1, 1.2, 1],
                       }}
                       transition={{ duration: 8, repeat: Infinity }}
-                      className="absolute top-1/3 -left-6 w-3 h-3 bg-cyan-400 rounded-full opacity-80"
+                      className="absolute top-1/3 -left-4 w-1.5 h-1.5 md:w-3 md:h-3 bg-cyan-400 rounded-full opacity-80"
                     />
                     <motion.div
                       animate={{
@@ -177,7 +179,7 @@ const JoinUs = () => {
                         opacity: [0.5, 1, 0.5],
                       }}
                       transition={{ duration: 4, repeat: Infinity, delay: 1.5 }}
-                      className="absolute bottom-1/4 -right-5 w-2 h-2 bg-blue-400 rounded-full"
+                      className="absolute bottom-1/4 -right-3 w-1 h-1 md:w-2 md:h-2 bg-blue-400 rounded-full"
                     />
                   </motion.div>
                 </div>
