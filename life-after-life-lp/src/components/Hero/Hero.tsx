@@ -20,8 +20,8 @@ const Hero = () => {
               <span className="flex items-center justify-center md:justify-start gap-3 mt-2">
                 אל הלב
                 <svg
-                  width="56"
-                  height="56"
+                  width="45"
+                  height="45"
                   viewBox="0 0 24 24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
